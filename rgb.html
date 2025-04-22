@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="rgb.css" rel="stylesheet">
+        <link href="https://gabriellessade.github.io/favicon_rgb_light.ico" rel="icon" id="favicon">
+        <title>gabriellessa</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="navbar-left">
+                <span data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="?" data-bs-placement="bottom" class="unselectable" id="device">
+                    🖥️
+                </span>
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        RGB Chameleon
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Homepage</a></li>
+                        <li><a class="dropdown-item" href="final.html">Final Project</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact Info</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="unselectable" id="navbar-title"><img src="https://gabriellessade.github.io/navbar_logo_light.svg" draggable="false" id="navicon" >gabriellessa</p>
+
+            <svg id="paleta" class="paleta" width="222">
+                <circle r="12" cx="16" cy="20" class="a"/>
+                <circle r="12" cx="48" cy="20" class="b"/>
+                <circle r="12" cx="80" cy="20" class="c"/>
+                <circle r="12" cx="112" cy="20" class="d"/>
+                <circle r="12" cx="144" cy="20" class="e"/>
+                <circle r="12" cx="176" cy="20" class="f"/>
+                <circle r="12" cx="208" cy="20" class="dark-light-button"/>
+            </svg>
+        </div>
+
+        <div id="content">
+            <div class="game-div unselectable">
+                <h1><span>RGB Chameleon</span></h1>
+                <h2>The Scratch game I made for CS50</h2>
+                <iframe src="game.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen id="game"></iframe>
+            </div>
+            <span id="gutter"></span>
+            <div class="game-div" id="instructions">
+                <div>
+                    <h3>GOAL</h3>
+                    <ul>
+                        <li>Last as long as possible.</li>
+                        <li>Avoid projectiles that are of a different color than the the player.</li>
+                        <li>Touch projectiles that are of the same color as the player to destroy them.</li>
+                        <li>The player's color always matches the background.</li>
+                    </ul>
+                </div>
+                <div class="instructions-section">
+                    <ul>
+                        <li><img src="https://gabriellessade.github.io/cir.svg" draggable="false" class="unselectable tut-icon" id="circle-icon"> bounce off corners;</li>
+
+                        <div class="tut-item">
+                            <li><img src="https://gabriellessade.github.io/qua.svg" draggable="false" class="unselectable tut-icon" id="square-icon"> change color when they bounce;</li>
+                        </div>
+
+                        <div class="tut-item">
+                            <li><img src="https://gabriellessade.github.io/tri.svg" draggable="false" class="unselectable tut-icon" id="triangle-icon"> speed up and target the player when they bounce.</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>CONTROLS</h3>
+                    <ul>
+                        <li><img src="https://gabriellessade.github.io/arrow_light.svg" draggable="false" class="unselectable tut-icon arrow-icon" style="transform: rotate(-90deg)"><span class="tut-icon-gap"></span><img src="https://gabriellessade.github.io/arrow_light.svg" draggable="false" class="unselectable tut-icon arrow-icon" style="transform: rotate(90deg)">: Move</li>
+
+                        <div class="tut-item">
+                            <li><img src="https://gabriellessade.github.io/arrow_light.svg" draggable="false" class="unselectable tut-icon arrow-icon"><span class="tut-icon-gap"></span><img src="https://gabriellessade.github.io/arrow_light.svg" draggable="false" class="unselectable tut-icon arrow-icon" style="transform: rotate(180deg)">: Switch lanes</li>
+                        </div>
+
+                        <div class="tut-item">
+                            <li><img src="https://gabriellessade.github.io/space_light.svg" draggable="false" class="unselectable tut-icon" id="space-icon">: Reset</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" id="prev-page"><-Previous page</a>
+        <a href="final.html" id="next-page">Next page -></a>
+
+        <!-- SCRIPTS -->
+        <script src="darkLightMode.js"></script>
+        <script src="mobileCheck.js"></script>
+        <script src="popovers.js"></script>
+        <script src="titleFontRandomizer.js"></script>
+        <script src="rgbCircle.js"></script>
+        <script src="rgbSquare.js"></script>
+        <script src="rgbTriangle.js"></script>
+        <script src="embeddedGame.js"></script>
+    </body>
+</html>

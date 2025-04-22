@@ -1,0 +1,94 @@
+.shapes
+{
+    width: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shapes:hover
+{
+    cursor: pointer;
+}
+
+#content
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display:flex;
+}
+
+.game-div
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--divisor);
+}
+
+.game-div h1 span:hover
+{
+    color: red;
+    cursor: pointer;
+    -webkit-text-stroke: 1px var(--txt-pri);
+}
+
+#gutter
+{
+    width: var(--gutter);
+}
+
+h2
+{
+    color: var(--txt-ter);
+    font-style: italic;
+    font-size: 24px;
+}
+
+#instructions
+{
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.instructions-section
+{
+    padding-top: 16px;
+    border-top: 1px solid var(--txt-ter);
+}
+
+#circle-icon:hover,
+#square-icon:hover,
+#triangle-icon:hover
+{
+    cursor: pointer;
+}
+
+.tut-item
+{
+    padding-top: 16px;
+}
+
+.tut-icon
+{
+    height: 32px;
+    vertical-align: middle;
+}
+
+.tut-icon-gap
+{
+    padding-right: 4px;
+}
+
+#game
+{
+    width: 0;
+    height: 0;
+    border-radius: 16px;
+}

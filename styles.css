@@ -1,0 +1,210 @@
+:root
+{
+    --txt-pri: #171412;
+    --txt-sec: #2e2c2a;
+    --txt-ter: #454341;
+    --txt-link: #0046d1;
+    --txt-alt: #fff8f4;
+    --highlight: #171412;
+
+    --btt-normal: #0046d1;
+    --btt-hover: #fff8f4;
+    --btt-press: #171412;
+    --stroke: #171412;
+
+    --inp-bg: #e6dfdc;
+    --inp-bg-focus: #171412;
+
+    --bg: #fff8f4;
+    --subdiv: #e6dfdc;
+    --divisor: #ccc6c3;
+
+    --gutter: 24px;
+}
+
+.dark-mode
+{
+    --txt-pri: #fff8f4;
+    --txt-sec: #e6dfdc;
+    --txt-ter: #ccc6c3;
+    --txt-link: #ffba0a;
+    --txt-alt: #171412;
+    --highlight: #fff8f4;
+
+    --btt-normal: #ffba0a;
+    --btt-hover: #171412;
+    --btt-press: #fff8f4;
+    --stroke: #fff8f4;
+
+    --inp-bg: #2e2c2a;
+    --inp-bg-focus: #fff8f4;
+
+    --bg: #171412;
+    --subdiv: #2e2c2a;
+    --divisor: #454341;
+}
+
+body
+{
+    background-color: var(--bg);
+    color: var(--txt-pri);
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monospace;
+}
+
+#navbar
+{
+    display: flex;
+    position: fixed;
+
+    z-index: 1000;
+
+    height: 40px;
+    width: 100vw;
+
+    line-height: 40px;
+    justify-content: center;
+
+    background-color: var(--btt-normal);
+    color: var(--txt-alt);
+
+    border-radius: 0 0 16px 16px;
+}
+
+.navbar-left
+{
+    display: flex;
+    position: absolute;
+    left: 8px;
+}
+
+.popover
+{
+    --bs-popover-bg: var(--bg);
+    --bs-popover-border-color: var(--btt-normal);
+    --bs-popover-arrow-border: var(--btt-normal);
+    --bs-popover-arrow-color: var(--btt-normal);
+}
+
+.popover-body
+{
+    font-size: 200%;
+}
+
+.btn-outline-primary
+{
+    border: 0;
+    color: var(--txt-alt);
+    padding: 3px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.show
+{
+    background-color: var(--btt-hover);
+    color: var(--txt-link);
+
+}
+
+.dropdown-menu
+{
+    background-color: var(--bg);
+    border: 1px solid var(--btt-normal);
+}
+
+.dropdown-item
+{
+    color: var(--txt-pri);
+}
+
+.dropdown-item:hover
+{
+    background-color: var(--btt-normal);
+    color: var(--txt-alt);
+}
+
+#navicon
+{
+    width: 32px;
+    vertical-align: middle;
+}
+
+.unselectable
+{
+    user-select: none;
+}
+
+#paleta
+{
+    position: absolute;
+    right: 8px;
+}
+
+.paleta
+{
+    stroke: var(--txt-alt);
+    stroke-width: 4;
+}
+
+circle.a
+{
+    fill: var(--bg);
+}
+
+circle.b
+{
+    fill: var(--subdiv);
+}
+
+circle.c
+{
+    fill: var(--divisor);
+}
+
+circle.d
+{
+    fill: var(--btt-normal);
+}
+
+circle.e
+{
+    fill: var(--txt-ter);
+}
+
+circle.f
+{
+    fill: var(--txt-sec);
+}
+
+.dark-light-button
+{
+    fill: var(--txt-pri);
+}
+
+.dark-light-button:hover
+{
+    cursor: pointer;
+}
+
+::selection {
+    background: var(--highlight);
+    color: var(--txt-alt);
+}
+
+a
+{
+    color: var(--txt-link);
+}
+
+#next-page
+{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+#prev-page
+{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}

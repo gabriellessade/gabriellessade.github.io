@@ -1,0 +1,97 @@
+:root
+{
+    background-image: url('https://gabriellessade.github.io/bg_light.bmp');
+    background-repeat: repeat;
+}
+
+.blink
+{
+    color: red;
+}
+
+#content
+{
+    font-family: 'Times New Roman', serif;
+}
+
+#content-main
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#under-construction
+{
+    display: flex;
+
+    background-image: url('https://gabriellessade.github.io/bg_1.jpg');
+    background-repeat: repeat;
+
+    padding: 16px;
+}
+
+.side-image
+{
+    height: 25vh;
+    border: 16px outset;
+    border-color: var(--bg);
+}
+
+#under-construction h1
+{
+    font-size: 72px;
+    margin: 16px;
+
+    font-family: 'Arial', sans-serif;
+    text-decoration: underline;
+}
+
+#under-construction-title img
+{
+    height: 128px;
+}
+
+#visitor-count
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#visitor-count img
+{
+    height: 64px;
+    padding: 4px;
+    border-style: inset;
+    border-color: var(--bg);
+}
+
+.content-gap
+{
+    margin-top: 32px;
+}
+
+#geocities
+{
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+#geo-logo
+{
+    height: 32px;
+    vertical-align: bottom;
+}

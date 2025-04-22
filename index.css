@@ -1,0 +1,50 @@
+:root
+{
+    background-image: none !important;
+}
+
+#content
+{
+    display: flex;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    align-items: center;
+}
+
+#slide
+{
+    width: 33vw;
+    text-align: center;
+
+    padding-right: var(--gutter);
+    /* border-right: 1px solid var(--divisor); */
+}
+
+.carousel-inner
+{
+    border-radius: 16px;
+}
+
+.txt-sec
+{
+    color: var(--txt-ter);
+    font-style: italic;
+    font-size: 85%;
+}
+
+#intro
+{
+    padding-left: var(--gutter);
+    width: 33vw;
+    border-left: 1px solid var(--divisor);
+}
+
+marquee
+{
+    font-family: "Brush Script MT", cursive;
+    font-size: 200%;
+}

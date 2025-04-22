@@ -1,0 +1,86 @@
+:root
+{
+    --inp-border: rgba(0, 70, 209, 0.3);
+    --field-select: white;
+}
+
+.dark-mode
+{
+    --inp-border: rgba(255, 186, 10, 0.3);
+    --field-select: black;
+}
+
+#content
+{
+    display: flex;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icon
+{
+    margin-bottom: 1vw;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+#middle-icon
+{
+    padding: 0 5vw;
+}
+
+.contact-field
+{
+    display: flex;
+}
+
+.form-control
+{
+    color: var(--txt-pri);
+    background-color: var(--subdiv);
+
+    border: 2px solid var(--divisor);
+    border-right: 0;
+}
+
+.form-control:focus
+{
+    color: var(--txt-pri);
+    background-color: var(--field-select);
+
+    border: 2px solid var(--divisor);
+    border-right: 0;
+
+    box-shadow: 0 0 0 4px var(--inp-border);
+}
+
+.btn-outline-secondary
+{
+    background-color: var(--btt-normal);
+    border-color: var(--btt-normal);
+}
+
+.btn-outline-secondary:hover
+{
+    background-color: var(--btt-hover);
+    border-color: var(--btt-normal);
+}
+
+.copy-icon
+{
+    width: 16px;
+}
+
+.custom-tooltip
+{
+    --bs-tooltip-bg: var(--btt-normal);
+    --bs-tooltip-color: var(--txt-alt);
+}

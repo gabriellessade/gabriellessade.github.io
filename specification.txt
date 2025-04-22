@@ -1,0 +1,30 @@
+HTML tags:
+1. div
+2. span
+3. button
+4. ul / li
+5. p
+6. svg / circle / image
+7. img
+8. marquee
+9. a
+10. h1 / h2
+11. iframe
+
+CSS selectors:
+1. :root
+2. .dark-mode
+3. body
+4. #navbar
+5: .btn-outline-primary:hover
+
+CSS properties:
+1. font-family
+2. z-index
+3. user-select
+4. cursor
+5. background-repeat
+
+Javascript: I used JS to detect if the user is in a mobile or desktop platform and to enable Bootstrap popovers and tooltips; as well as to implement a light and dark mode toggle, a random cat face emoji generator, a font randomizer, collision detection for dynamically created elements that bounce off the corners of the screen and custom animated cursors.
+
+Bootstrap: I used Bootstrap dropdowns for the menu featured on the navigation bar, popovers and tooltips to display additional information when hovering certain elements, a carousel in order to include a slideshow in the landing page and input groups on the contact pages to allow the user to copy the links found in the text fields to the clipboard with a single click.
