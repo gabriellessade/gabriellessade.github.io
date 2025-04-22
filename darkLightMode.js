@@ -23,6 +23,10 @@ let setImages = [
 let currentPage = favicon.href.match(/_.+_/)[0].replace(/_/g, '');
 switch(currentPage)
 {
+    case '':
+        console.log("teste");
+        break;
+        
     case 'rgb':
         setImages.push(function() {
             let arrows = document.getElementsByClassName('arrow-icon');
