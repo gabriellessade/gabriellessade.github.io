@@ -4,7 +4,11 @@
 let dark = localStorage.getItem('theme') === 'true';
 
 let colorMode = ['light', 'dark'];
-let page = document.URL.match(/([^\/]+)\.html/)[1];
+try {
+    let page = document.URL.match(/([^\/]+)\.html/)[1];
+} catch(err) {
+    window.location.replace("https://gabriellessade.github.io/index.html");
+}
 
 let favicon = document.getElementById('favicon');
 let navicon = document.getElementById('navicon');
@@ -22,11 +26,7 @@ let setImages = [
 // Additional functions will be appended to the array depending on the page
 let currentPage = favicon.href.match(/_.+_/)[0].replace(/_/g, '');
 switch(currentPage)
-{
-    case '':
-        console.log("teste");
-        break;
-        
+{        
     case 'rgb':
         setImages.push(function() {
             let arrows = document.getElementsByClassName('arrow-icon');
