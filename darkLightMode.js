@@ -4,12 +4,10 @@
 let dark = localStorage.getItem('theme') === 'true';
 
 let colorMode = ['light', 'dark'];
-try {
-    let page = document.URL.match(/([^\/]+)\.html/)[1];
-    console.log(page);
-} catch(err) {
-    let page = 'index.html';
-}
+
+let page = document.URL.match(/([^\/]+)\.html/);
+if (page.length >= 2) page = page[1];
+else page = 'index.html';
 
 let favicon = document.getElementById('favicon');
 let navicon = document.getElementById('navicon');
