@@ -6,8 +6,9 @@ let dark = localStorage.getItem('theme') === 'true';
 let colorMode = ['light', 'dark'];
 try {
     let page = document.URL.match(/([^\/]+)\.html/)[1];
+    console.log(page);
 } catch(err) {
-    window.location.replace("https://gabriellessade.github.io/index.html");
+    let page = 'index.html';
 }
 
 let favicon = document.getElementById('favicon');
