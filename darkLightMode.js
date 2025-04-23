@@ -6,7 +6,7 @@ let dark = localStorage.getItem('theme') === 'true';
 let colorMode = ['light', 'dark'];
 
 let page = document.URL.match(/([^\/]+)\.html/);
-if (page.length >= 2) page = page[1];
+if (page != null && page.length >= 2) page = page[1];
 else page = 'index.html';
 
 let favicon = document.getElementById('favicon');
