@@ -7,7 +7,7 @@ let colorMode = ['light', 'dark'];
 
 let page = document.URL.match(/([^\/]+)\.html/);
 if (page != null && page.length >= 2) page = page[1];
-else page = 'index.html';
+else page = 'index';
 
 let favicon = document.getElementById('favicon');
 let navicon = document.getElementById('navicon');
